@@ -150,7 +150,360 @@
 
 
   
+    <article id="post-RecyclerView 撑满" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/31/RecyclerView%20%E6%92%91%E6%BB%A1/" class="article-date">
+  <time datetime="2020-07-31T09:49:35.129Z" itemprop="datePublished">2020-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="RecyclerView-撑满"><a href="#RecyclerView-撑满" class="headerlink" title="RecyclerView 撑满"></a>RecyclerView 撑满</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">recyclerView.setNestedScrollingEnabled(<span class="keyword">false</span>);</span><br></pre></td></tr></table></figure>
 
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/31/RecyclerView%20%E6%92%91%E6%BB%A1/" data-id="ckdtkxkwv0004z0ujg6g6gu78" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-RecyclerView Adapter" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/31/RecyclerView%20Adapter/" class="article-date">
+  <time datetime="2020-07-31T05:40:12.335Z" itemprop="datePublished">2020-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="RecyclerView-Adapter"><a href="#RecyclerView-Adapter" class="headerlink" title="RecyclerView Adapter"></a>RecyclerView Adapter</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">xxxAdapter</span> <span class="keyword">extends</span> <span class="title">RecyclerView</span>.<span class="title">Adapter</span>&lt;<span class="title">xxxAdapter</span>.<span class="title">ViewHolder</span>&gt; </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="title">xxxAdapter</span><span class="params">()</span><span class="params">(Context context,XX xx)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.context=context;</span><br><span class="line">        <span class="keyword">this</span>.xx=xx;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> <span class="class"><span class="keyword">class</span> <span class="title">ViewHolder</span> <span class="keyword">extends</span> <span class="title">RecyclerView</span>.<span class="title">ViewHolder</span> </span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="title">ViewHolder</span><span class="params">(View itemView)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">super</span>(itemView);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> xxxAdapter.<span class="function">ViewHolder <span class="title">onCreateViewHolder</span><span class="params">(ViewGroup parent, <span class="keyword">int</span> viewType)</span> </span>&#123;</span><br><span class="line">                    View view= LayoutInflater.from(parent.getContext())</span><br><span class="line">                    .inflate(R.layout.xxx,parent,<span class="keyword">false</span>);</span><br><span class="line">            ViewHolder holder=<span class="keyword">new</span> ViewHolder(view);</span><br><span class="line">            <span class="keyword">return</span> holder;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onBindViewHolder</span><span class="params">(xxxAdapter.ViewHolder holder, <span class="keyword">int</span> position)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getItemCount</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/31/RecyclerView%20Adapter/" data-id="ckdtkxkww0005z0uj4l9x46wl" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Android在TextView中设置部分文字可点击" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/31/Android%E5%9C%A8TextView%E4%B8%AD%E8%AE%BE%E7%BD%AE%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E5%8F%AF%E7%82%B9%E5%87%BB/" class="article-date">
+  <time datetime="2020-07-31T02:40:48.008Z" itemprop="datePublished">2020-07-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android在TextView中设置部分文字可点击"><a href="#Android在TextView中设置部分文字可点击" class="headerlink" title="Android在TextView中设置部分文字可点击"></a>Android在TextView中设置部分文字可点击</h1><p>方法一 直接处理字串，将字串中需要点击的字段找出来做“特别”处理</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">spanString = <span class="keyword">new</span> SpannableString(<span class="string">&quot;这是一条测试文本可点击文本&quot;</span>);</span><br><span class="line">spanString.setSpan(<span class="keyword">new</span> Clickable(listener), <span class="number">8</span>, <span class="number">12</span>, Spanned.SPAN_MARK_MARK);</span><br><span class="line">textView.setText(spanString);</span><br><span class="line">textView.setMovementMethod(LinkMovementMethod.getInstance());<span class="comment">//开始响应点击事件</span></span><br></pre></td></tr></table></figure>
+
+
+
+<p>方法二 通过拼接的方式，将普通字串和已经处理好的点击字串做相应的拼接操作</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">spanString = <span class="keyword">new</span> SpannableString(<span class="string">&quot;可点击文本&quot;</span>));</span><br><span class="line">spanString.setSpan(<span class="keyword">new</span> ClickableSpan() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View view)</span> </span>&#123;</span><br><span class="line">                <span class="comment">//点击的响应事件</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;, <span class="number">0</span>, spanString.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);</span><br><span class="line">textView.setText(<span class="string">&quot;这是一条测试文本&quot;</span>);</span><br><span class="line">textView.append(spanString);</span><br><span class="line">textView.setMovementMethod(LinkMovementMethod.getInstance());<span class="comment">//开始响应点击事件</span></span><br></pre></td></tr></table></figure>
+
+<p>两种方式无所谓好坏，适用于不同场景，所谓“尺有所短，寸有所长”。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/31/Android%E5%9C%A8TextView%E4%B8%AD%E8%AE%BE%E7%BD%AE%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E5%8F%AF%E7%82%B9%E5%87%BB/" data-id="ckdtkxkwr0002z0uj0bw67cl9" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Android笔记之使用CMake进行JNI开发" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/28/Android%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%BD%BF%E7%94%A8CMake%E8%BF%9B%E8%A1%8CJNI%E5%BC%80%E5%8F%91/" class="article-date">
+  <time datetime="2020-07-28T08:56:15.942Z" itemprop="datePublished">2020-07-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android笔记之使用CMake进行JNI开发"><a href="#Android笔记之使用CMake进行JNI开发" class="headerlink" title="Android笔记之使用CMake进行JNI开发"></a>Android笔记之使用CMake进行JNI开发</h1><h2 id="环境需求"><a href="#环境需求" class="headerlink" title="环境需求"></a>环境需求</h2><blockquote>
+<p>SDK Tools添加CMake</p>
+</blockquote>
+<h2 id="方式一，在创建工程时添加"><a href="#方式一，在创建工程时添加" class="headerlink" title="方式一，在创建工程时添加"></a>方式一，在创建工程时添加</h2><p><img src="https://i.loli.net/2020/07/28/tglqXKpLwBsbQyz.png" alt="这里写图片描述"></p>
+<blockquote>
+<p>在app目录下会有一个CMakeLists.txt文件</p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"># For more information about <span class="keyword">using</span> CMake with Android Studio, <span class="built_in">read</span> the</span><br><span class="line"><span class="meta"># documentation: https:<span class="comment">//d.android.com/studio/projects/add-native-code.html</span></span></span><br><span class="line"></span><br><span class="line"># Sets the minimum version of CMake required to build the native library.</span><br><span class="line"></span><br><span class="line">cmake_minimum_required(VERSION <span class="number">3.4</span><span class="number">.1</span>)</span><br><span class="line"></span><br><span class="line"># Creates <span class="keyword">and</span> names a library, sets it as either STATIC</span><br><span class="line"><span class="meta"># or SHARED, and provides the relative paths to its source code.</span></span><br><span class="line"># You can define multiple libraries, <span class="keyword">and</span> CMake builds them <span class="keyword">for</span> you.</span><br><span class="line"># Gradle automatically packages shared libraries with your APK.</span><br><span class="line"></span><br><span class="line"># 配置so库信息</span><br><span class="line">add_library( # Sets the name of the library.</span><br><span class="line">            # 生成的so库名称，此处生成的so文件名称是libnative-lib.so</span><br><span class="line">             native-lib</span><br><span class="line"></span><br><span class="line">             # Sets the library as a shared library.</span><br><span class="line">             # STATIC：静态库，是目标文件的归档文件，在链接其它目标的时候使用</span><br><span class="line">             # SHARED：动态库，会被动态链接，在运行时被加载</span><br><span class="line">             # MODULE：模块库，是不会被链接到其它目标中的插件，但是可能会在运行时使用dlopen-系列的函数动态链接</span><br><span class="line">             SHARED</span><br><span class="line"></span><br><span class="line">             # Provides a relative path to your source file(s).</span><br><span class="line">             # 资源文件，可以多个，</span><br><span class="line">             # 资源路径是相对路径，相对于本CMakeLists.txt所在目录</span><br><span class="line">             src/main/cpp/native-lib.cpp )</span><br><span class="line"></span><br><span class="line"># Searches <span class="keyword">for</span> a specified prebuilt library <span class="keyword">and</span> stores the path as a</span><br><span class="line"><span class="meta"># variable. Because CMake includes system libraries in the search path by</span></span><br><span class="line"><span class="meta"># default, you only need to specify the name of the public NDK library</span></span><br><span class="line"><span class="meta"># you want to add. CMake verifies that the library exists before</span></span><br><span class="line"><span class="meta"># completing its build.</span></span><br><span class="line"></span><br><span class="line"># 从系统查找依赖库</span><br><span class="line">find_library( # Sets the name of the path variable.</span><br><span class="line">              # android系统每个类型的库会存放一个特定的位置，而<span class="built_in">log</span>库存放在<span class="built_in">log</span>-lib中</span><br><span class="line">              <span class="built_in">log</span>-lib</span><br><span class="line"></span><br><span class="line">              # Specifies the name of the NDK library that</span><br><span class="line">              # you want CMake to locate.</span><br><span class="line">              # android系统在c环境下打<span class="built_in">log</span>到logcat的库</span><br><span class="line">              <span class="built_in">log</span> )</span><br><span class="line"></span><br><span class="line"># Specifies libraries CMake should link to your target library. You</span><br><span class="line"><span class="meta"># can link multiple libraries, such as libraries you <span class="meta-keyword">define</span> in this</span></span><br><span class="line"><span class="meta"># build script, prebuilt third-party libraries, or system libraries.</span></span><br><span class="line"></span><br><span class="line"># 配置库的链接（依赖关系）</span><br><span class="line">target_link_libraries( # Specifies the target library.</span><br><span class="line"></span><br><span class="line">                       # 目标库</span><br><span class="line">                       native-lib</span><br><span class="line"></span><br><span class="line">                       # Links the target library to the <span class="built_in">log</span> library</span><br><span class="line">                       # included in the NDK.</span><br><span class="line">                       # 依赖于</span><br><span class="line">                       $&#123;<span class="built_in">log</span>-lib&#125; )</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>在app/build.gradle中有</p>
+</blockquote>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// android下</span></span><br><span class="line">    externalNativeBuild &#123;</span><br><span class="line">        cmake &#123;</span><br><span class="line">            path <span class="string">&quot;CMakeLists.txt&quot;</span> <span class="comment">// cmake配置文件路径</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="方法二，在项目开发过程中添加jni"><a href="#方法二，在项目开发过程中添加jni" class="headerlink" title="方法二，在项目开发过程中添加jni"></a>方法二，在项目开发过程中添加jni</h2><blockquote>
+<p>首先，在app下新建一个CMakeLists.txt。find_library、target_link_libraries不是必须的，可以省略。</p>
+<p>cmake_minimum_required(VERSION 3.6)</p>
+<p>add_library( # Sets the name of the library.<br>             xjni</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Sets the library as a shared library.</span><br><span class="line">SHARED</span><br><span class="line"></span><br><span class="line"># Provides a relative path to your source file(s).</span><br><span class="line">src/main/jni/XJni.c )</span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>在app/build.gradle中添加</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; android下</span><br><span class="line">    externalNativeBuild &#123;</span><br><span class="line">        cmake &#123;</span><br><span class="line">            path &quot;CMakeLists.txt&quot; &#x2F;&#x2F; cmake配置文件路径</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>Sycn</p>
+<p>编译完成，编译器会报找不到XJni.c文件错误。ok，那我们新建一个/app/src/main/jni/XJni.c：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;jni.h&gt;</span></span></span><br></pre></td></tr></table></figure>
+</blockquote>
+<blockquote>
+<p>新建java文件调用</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">XJni</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">static</span> &#123;</span><br><span class="line">        System.loadLibrary(<span class="string">&quot;xjni&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">native</span> String <span class="title">getStr</span><span class="params">(String s)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>getStr方法显示错误红色，不用着急，我们选中函数名，按快捷键alt+enter：</p>
+<p><img src="https://i.loli.net/2020/07/28/EXlAZFJnomcNBVa.png" alt="这里写图片描述"></p>
+<p>选择create function后，函数就自动在XJni.c文件中生成了。</p>
+</blockquote>
+<p>需要注意的是，你最好让.java文件名与.c文件名同名，否则你可能快捷键不会出现create function选项。修改.c文件名的时候记得对应将CMakeLists.txt中修改。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/28/Android%E7%AC%94%E8%AE%B0%E4%B9%8B%E4%BD%BF%E7%94%A8CMake%E8%BF%9B%E8%A1%8CJNI%E5%BC%80%E5%8F%91/" data-id="ckdtkxkwl0001z0ujhpet3mld" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-枚举型 单例模式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/27/%E6%9E%9A%E4%B8%BE%E5%9E%8B%20%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" class="article-date">
+  <time datetime="2020-07-27T02:53:40.702Z" itemprop="datePublished">2020-07-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="枚举型-单例模式"><a href="#枚举型-单例模式" class="headerlink" title="枚举型 单例模式"></a>枚举型 单例模式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">enum</span> EnumSingle &#123;</span><br><span class="line">    INSTANCE;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">method</span><span class="params">()</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;hello enum single&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">domain</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        EnumSingle single=EnumSingle.INSTANCE;</span><br><span class="line">        single.method();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/27/%E6%9E%9A%E4%B8%BE%E5%9E%8B%20%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F/" data-id="ckdtkxkx2000az0uj3lv9edna" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-APP获取设备唯一ID" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/21/APP%E8%8E%B7%E5%8F%96%E8%AE%BE%E5%A4%87%E5%94%AF%E4%B8%80ID/" class="article-date">
+  <time datetime="2020-07-21T09:17:14.340Z" itemprop="datePublished">2020-07-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="APP获取设备唯一ID"><a href="#APP获取设备唯一ID" class="headerlink" title="APP获取设备唯一ID"></a>APP获取设备唯一ID</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">getUid</span><span class="params">(Context context)</span></span>&#123;</span><br><span class="line">    Map&lt;String,String&gt; map = <span class="keyword">new</span> HashMap&lt;&gt;();</span><br><span class="line">    map.put(<span class="string">&quot;android_id&quot;</span>, Settings.System.getString(context.getContentResolver(), Settings.System.ANDROID_ID));</span><br><span class="line">    map.put(<span class="string">&quot;android_version&quot;</span>, Build.VERSION.RELEASE);</span><br><span class="line">    map.put(<span class="string">&quot;fingerprint&quot;</span>,Build.FINGERPRINT);</span><br><span class="line">    map.put(<span class="string">&quot;product_model&quot;</span>,Build.MODEL);</span><br><span class="line">    Gson gson=<span class="keyword">new</span> Gson();</span><br><span class="line">    String json=gson.toJson(map);</span><br><span class="line">    String md5=MD5.encode(json+<span class="string">&quot;密钥&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> md5;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="attr">&quot;fingerprint&quot;</span>:<span class="string">&quot;Xiaomi/raphael/raphael:10/QKQ1.190825.002/V12.0.2.0.QFKCNXM:user/release-keys&quot;</span>,</span><br><span class="line"><span class="attr">&quot;android_version&quot;</span>:<span class="string">&quot;10&quot;</span>,</span><br><span class="line"><span class="attr">&quot;android_id&quot;</span>:<span class="string">&quot;918f1590e3cec371&quot;</span>,</span><br><span class="line"><span class="attr">&quot;product_model&quot;</span>:<span class="string">&quot;Redmi K20 Pro&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>ANDROID_ID可以作为设备标识，但需要注意：</p>
+<ol>
+<li>厂商定制系统的Bug：不同的设备可能会产生相同的ANDROID_ID：9774d56d682e549c。</li>
+<li>厂商定制系统的Bug：有些设备返回的值为null。</li>
+<li>设备差异：对于CDMA设备，ANDROID_ID和TelephonyManager.getDeviceId() 返回相同的值。</li>
+</ol>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/21/APP%E8%8E%B7%E5%8F%96%E8%AE%BE%E5%A4%87%E5%94%AF%E4%B8%80ID/" data-id="ckdtkxkwr0003z0uj2kzn3xe4" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Android 开源" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/17/Android%20%E5%BC%80%E6%BA%90/" class="article-date">
+  <time datetime="2020-07-17T03:16:46.910Z" itemprop="datePublished">2020-07-17</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android-开源"><a href="#Android-开源" class="headerlink" title="Android 开源"></a>Android 开源</h1><table>
+<thead>
+<tr>
+<th>Android 页面底部和侧边的导航栏</th>
+<th><img src="https://i.loli.net/2020/07/17/KNJ5yLD8lMesVuk.png" alt="无标题"></th>
+<th><a target="_blank" rel="noopener" href="https://github.com/tyzlmjj/PagerBottomTabStrip">https://github.com/tyzlmjj/PagerBottomTabStrip</a></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>KunMinX<br>Linkage-RecyclerView一行代码即可接入二级联动列表</strong></td>
+<td><img src="https://i.loli.net/2020/07/17/14sXRczv2p3ZN8q.png" alt="image-20200717111502144"></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/KunMinX/Linkage-RecyclerView">https://github.com/KunMinX/Linkage-RecyclerView</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Android-skin-support一款 Android 换肤框架</strong></td>
+<td><img src="https://i.loli.net/2020/07/17/6g59WKwuSt3R1ze.jpg" alt="SharedScreenshot"></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/ximsfei/Android-skin-support">https://github.com/ximsfei/Android-skin-support</a></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>[ BubbleSeekBar]A beautiful Android custom seek bar, which has a bubble view with progress appearing upon when seeking. Highly customizable, mostly demands has been considered</strong></td>
+<td><img src="https://github.com/woxingxiao/BubbleSeekBar/raw/master/screenshot/demo3.gif" alt="demo3"><img src="https://github.com/woxingxiao/BubbleSeekBar/raw/master/screenshot/demo4.gif" alt="demo4"></td>
+<td><a target="_blank" rel="noopener" href="https://github.com/woxingxiao/BubbleSeekBar">https://github.com/woxingxiao/BubbleSeekBar</a></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/17/Android%20%E5%BC%80%E6%BA%90/" data-id="ckdtkxkx3000bz0uj95bb4m5m" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Android  drawable中边框样式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2020/07/13/Android%20%20drawable%E4%B8%AD%E8%BE%B9%E6%A1%86%E6%A0%B7%E5%BC%8F/" class="article-date">
+  <time datetime="2020-07-13T00:57:24.810Z" itemprop="datePublished">2020-07-13</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Android-drawable中边框样式"><a href="#Android-drawable中边框样式" class="headerlink" title="Android  drawable中边框样式"></a>Android  drawable中边框样式</h1><h2 id="四边都有边框"><a href="#四边都有边框" class="headerlink" title="四边都有边框"></a>四边都有边框</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">shape</span> <span class="attr">xmlns:android</span>=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span> &gt;</span></span><br><span class="line"> </span><br><span class="line">    <span class="tag">&lt;<span class="name">solid</span> <span class="attr">android:color</span>=<span class="string">&quot;#FFFFFF&quot;</span> /&gt;</span></span><br><span class="line"> </span><br><span class="line">    <span class="tag">&lt;<span class="name">stroke</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:width</span>=<span class="string">&quot;0.01dp&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:color</span>=<span class="string">&quot;#FFFFFF&quot;</span> /&gt;</span></span><br><span class="line"> </span><br><span class="line">    <span class="tag">&lt;<span class="name">padding</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:bottom</span>=<span class="string">&quot;1dp&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:left</span>=<span class="string">&quot;0.5dp&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:right</span>=<span class="string">&quot;0.5dp&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:top</span>=<span class="string">&quot;0dp&quot;</span> /&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="指定一边有边框"><a href="#指定一边有边框" class="headerlink" title="指定一边有边框"></a>指定一边有边框</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">layer-list</span> <span class="attr">xmlns:android</span>=<span class="string">&quot;http://schemas.android.com/apk/res/android&quot;</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;<span class="name">item</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:left</span>=<span class="string">&quot;-2dp&quot;</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:right</span>=<span class="string">&quot;-2dp&quot;</span></span></span><br><span class="line"><span class="tag">         <span class="attr">android:top</span>=<span class="string">&quot;-2dp&quot;</span>&gt;</span></span><br><span class="line">          <span class="tag">&lt;<span class="name">shape</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">solid</span> <span class="attr">android:color</span>=<span class="string">&quot;#ffffff&quot;</span>/&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">stroke</span></span></span><br><span class="line"><span class="tag">                   <span class="attr">android:width</span>=<span class="string">&quot;1dp&quot;</span></span></span><br><span class="line"><span class="tag">                   <span class="attr">android:color</span>=<span class="string">&quot;#ff0000&quot;</span>/&gt;</span></span><br><span class="line">          <span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br><span class="line">     <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">layer-list</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2020/07/13/Android%20%20drawable%E4%B8%AD%E8%BE%B9%E6%A1%86%E6%A0%B7%E5%BC%8F/" data-id="ckdtkxkx10009z0ujg9hff1rt" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+
+  <nav id="page-nav">
+    
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &amp;raquo;</a>
+  </nav>
 
 </section>
         
@@ -168,7 +521,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/08/">August 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/07/">July 2020</a></li></ul>
     </div>
   </div>
 
@@ -186,6 +539,18 @@
         
           <li>
             <a href="/2020/08/14/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/31/RecyclerView%20%E6%92%91%E6%BB%A1/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/31/RecyclerView%20Adapter/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2020/07/31/Android%E5%9C%A8TextView%E4%B8%AD%E8%AE%BE%E7%BD%AE%E9%83%A8%E5%88%86%E6%96%87%E5%AD%97%E5%8F%AF%E7%82%B9%E5%87%BB/">(no title)</a>
           </li>
         
       </ul>
